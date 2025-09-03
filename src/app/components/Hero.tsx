@@ -6,6 +6,7 @@ import { useRef } from 'react'
 import { SplitText } from 'gsap/SplitText'
 import { Physics2DPlugin } from 'gsap/Physics2DPlugin'
 import { useGSAP } from '@gsap/react'
+import Image from 'next/image'
 gsap.registerPlugin(SplitText, Physics2DPlugin, useGSAP)
 
 function Hero() {
@@ -58,31 +59,40 @@ function Hero() {
 					<span className='text-primary'>Back.</span>
 				</h1>
 				<p className='text-[16px]'>
-					I'm a Full Stack Developer specializing in building seamless
+					{`I'm a Full Stack Developer specializing in building seamless`}
 					<br /> digital experiences — from stunning UIs to powerful backends.
 				</p>
 				<Button
 					variant='outline'
-					className='w-[141px] h-[37px] border-primary text-[16px] hover:bg-primary hover:text-primary-foreground cursor-pointer'
+					className='w-[141px] h-[37px] border-primary text-[16px] hover:bg-primary/20 hover:text-primary-foreground cursor-pointer'
 				>
 					Contact me!!
 				</Button>
 			</div>
 			<div className='flex flex-col relative'>
-				<img
+				<Image
 					src='/images/logo.png'
+					alt='logo'
+					width={0}
+					height={0}
+					sizes='100vw'
 					className='size-[155px] absolute left-[20px] z-20 top-[50px]'
-					alt=''
 				/>
-				<img
+				<Image
 					src='/images/my-pic.png'
+					alt='my picture'
+					width={0}
+					height={0}
+					sizes='100vw'
 					className='h-[390px] w-[380px] z-30'
-					alt=''
 				/>
-				<img
+				<Image
 					src='/images/dots.png'
+					alt='dots'
+					width={0}
+					height={0}
+					sizes='100vw'
 					className='size-[84px] absolute right-0 top-[255px] z-40'
-					alt=''
 				/>
 				<div className='flex items-center px-[16px] py-[8px] gap-[12px] border'>
 					<div className='size-[16px] bg-primary'></div>
