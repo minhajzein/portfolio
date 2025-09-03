@@ -1,0 +1,69 @@
+'use client'
+
+import { Button } from '@/components/ui/button'
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
+import ScrambleTextPlugin from 'gsap/ScrambleTextPlugin'
+import { useRef } from 'react'
+import Link from 'next/link'
+
+gsap.registerPlugin(ScrambleTextPlugin, ScrollTrigger, useGSAP)
+
+function Title({ title, link }: { title: string; link: string | undefined }) {
+	const textRef = useRef<HTMLHeadingElement>(null)
+
+	useGSAP(() => {
+		if (!textRef.current) return
+
+		gsap.to(textRef.current, {
+			duration: 1,
+			scrambleText: title,
+			scrollTrigger: {
+				trigger: textRef.current,
+				start: 'top 80%', // when top of h1 hits 80% of viewport
+				toggleActions: 'play none none none', // play once
+			},
+		})
+
+		// Second phase scramble
+		gsap.to(textRef.current, {
+			duration: 1,
+			delay: 1.5,
+			scrambleText: {
+				text: title,
+				chars: 'XO',
+				revealDelay: 0.5,
+				speed: 0.3,
+				newClass: 'myClass',
+			},
+			scrollTrigger: {
+				trigger: textRef.current,
+				start: 'top 80%',
+				toggleActions: 'play none none none',
+			},
+		})
+	}, [])
+
+	return (
+		<div className='flex justify-between items-center mt-[32px] w-full px-[170px]'>
+			<div className='flex items-center gap-[12px] w-[50%]'>
+				<h1 className='text-[32px]'>
+					<span className='text-primary'>#</span>
+					<span ref={textRef}>{title}</span>
+				</h1>
+				<div className='h-[1px] w-full bg-primary'></div>
+			</div>
+			{link && (
+				<Link
+					href={link}
+					className='text-[16px] hover:text-secondary duration-300 flex items-center'
+				>
+					{'View all ~~>'}
+				</Link>
+			)}
+		</div>
+	)
+}
+
+export default Title
