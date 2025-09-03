@@ -60,7 +60,7 @@ function Hero() {
 				</h1>
 				<p className='text-[16px]'>
 					{`I'm a Full Stack Developer specializing in building seamless`}
-					<br /> digital experiences — from stunning UIs to powerful backends.
+					<br /> digital experiences from stunning UIs to powerful backends.
 				</p>
 				<Button
 					variant='outline'
