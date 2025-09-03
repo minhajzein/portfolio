@@ -26,11 +26,11 @@ export default function CubeAnimation({ skills }: { skills: string[] }) {
 		const themeColors = ['var(--primary)', 'var(--secondary)', 'var(--accent)']
 
 		for (let i = 0; i < n; i++) {
-			let die = document.querySelector('.die') as HTMLElement
+			const die = document.querySelector('.die') as HTMLElement
 			let cube = die.querySelector('.cube') as HTMLElement
 
 			if (i > 0) {
-				let clone = die.cloneNode(true) as HTMLElement
+				const clone = die.cloneNode(true) as HTMLElement
 				document.querySelector('.tray')?.append(clone)
 				cube = clone.querySelector('.cube') as HTMLElement
 			}
