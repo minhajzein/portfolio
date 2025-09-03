@@ -9,7 +9,7 @@ import Link from 'next/link'
 
 gsap.registerPlugin(ScrambleTextPlugin, ScrollTrigger, useGSAP)
 
-function Title({ title, link }: { title: string; link: string | undefined }) {
+function Title({ title, link }: { title: string; link: string | null }) {
 	const textRef = useRef<HTMLHeadingElement>(null)
 
 	useGSAP(() => {
@@ -20,12 +20,11 @@ function Title({ title, link }: { title: string; link: string | undefined }) {
 			scrambleText: title,
 			scrollTrigger: {
 				trigger: textRef.current,
-				start: 'top 80%', // when top of h1 hits 80% of viewport
-				toggleActions: 'play none none none', // play once
+				start: 'top 50%',
+				toggleActions: 'play none none none',
 			},
 		})
 
-		// Second phase scramble
 		gsap.to(textRef.current, {
 			duration: 1,
 			delay: 1.5,
@@ -45,7 +44,7 @@ function Title({ title, link }: { title: string; link: string | undefined }) {
 	}, [])
 
 	return (
-		<div className='flex justify-between items-center mt-[32px] w-full px-[170px]'>
+		<div className='flex justify-between items-center mt-[52px] w-full px-[170px]'>
 			<div className='flex items-center gap-[12px] w-[50%]'>
 				<h1 className='text-[32px]'>
 					<span className='text-primary'>#</span>
@@ -56,7 +55,7 @@ function Title({ title, link }: { title: string; link: string | undefined }) {
 			{link && (
 				<Link
 					href={link}
-					className='text-[16px] hover:text-secondary duration-300 flex items-center'
+					className='text-[16px] h-[32px] px-[24px] hover:bg-primary/20 hover:border border-primary duration-300 flex items-center'
 				>
 					{'View all ~~>'}
 				</Link>

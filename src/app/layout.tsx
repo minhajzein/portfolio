@@ -3,6 +3,7 @@ import { Fira_Code } from 'next/font/google'
 import './globals.css'
 import Header from '../components/header/Header'
 import Footer from '../components/footer/Footer'
+import { Analytics } from '@vercel/analytics/next'
 
 const firaCode = Fira_Code({
 	variable: '--font-fira',
@@ -25,6 +26,7 @@ export default function RootLayout({
 				<Header />
 				{children}
 				<Footer />
+				<Analytics />
 			</body>
 		</html>
 	)
