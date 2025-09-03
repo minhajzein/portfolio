@@ -2,7 +2,7 @@
 
 import { Button } from '@/components/ui/button'
 import gsap from 'gsap'
-import { useEffect, useRef } from 'react'
+import { useRef } from 'react'
 import { SplitText } from 'gsap/SplitText'
 import { Physics2DPlugin } from 'gsap/Physics2DPlugin'
 import { useGSAP } from '@gsap/react'
