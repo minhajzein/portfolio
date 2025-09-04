@@ -7,7 +7,7 @@ import React from 'react'
 
 gsap.registerPlugin(useGSAP)
 
-function template({ children }: { children: React.ReactNode }) {
+function Template({ children }: { children: React.ReactNode }) {
 	useGSAP(() => {
 		animatePageIn()
 	})
@@ -34,4 +34,4 @@ function template({ children }: { children: React.ReactNode }) {
 	)
 }
 
-export default template
+export default Template
