@@ -2,14 +2,16 @@
 
 import { animatePageOut } from '@/utils/animations'
 import { usePathname, useRouter } from 'next/navigation'
-import React from 'react'
+import React, { Dispatch, SetStateAction } from 'react'
 import { Button } from '../ui/button'
 
 interface Props {
 	href: string
 	label: string
+	closeMenu: Dispatch<SetStateAction<boolean>>
 }
-function TransitionLink({ href, label }: Props) {
+
+function TransitionLink({ href, label, closeMenu }: Props) {
 	const router = useRouter()
 	const pathName = usePathname()
 
@@ -18,6 +20,7 @@ function TransitionLink({ href, label }: Props) {
 	const handleClick = () => {
 		if (!isActive) {
 			animatePageOut(href, router)
+			closeMenu(false)
 		}
 	}
 
@@ -27,7 +30,7 @@ function TransitionLink({ href, label }: Props) {
 			variant='destructive'
 			className={`${
 				isActive ? 'text-primary-foreground' : 'text-secondary'
-			} capitalize hover:text-primary-foreground text-[16px] flex gap-0 cursor-pointer duration-300 items-center p-0`}
+			} capitalize hover:text-primary-foreground md:text-[16px] text-[32px] flex gap-0 cursor-pointer duration-300 items-center p-0`}
 		>
 			<span className='text-primary'>#</span>
 			<span>{label}</span>

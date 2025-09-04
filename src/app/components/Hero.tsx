@@ -49,9 +49,9 @@ function Hero() {
 	return (
 		<div
 			ref={container}
-			className='px-[170px] py-[30px] flex justify-between overflow-hidden'
+			className='px-[16px] md:px-[170px] gap-[25px] py-[30px] flex flex-col md:flex-row md:justify-between overflow-hidden'
 		>
-			<div className='flex flex-col gap-[50px]'>
+			<div className='flex flex-col gap-[25px] md:gap-[50px]'>
 				<h1 id='split-text' className='text-[32px] opacity-0'>
 					Crafting Scalable <span className='text-primary'>Web Solutions</span>,
 					<br />
@@ -84,7 +84,7 @@ function Hero() {
 					width={0}
 					height={0}
 					sizes='100vw'
-					className='h-[390px] w-[380px] z-30'
+					className='md:h-[390px] h-[350px] w-full md:w-[380px] z-30'
 				/>
 				<Image
 					src='/images/dots.png'

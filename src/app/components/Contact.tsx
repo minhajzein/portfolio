@@ -4,8 +4,8 @@ import { MdEmail } from 'react-icons/md'
 
 function Contact() {
 	return (
-		<div className='mt-[32px] px-[170px] flex justify-between'>
-			<p className='text-[16px] text-secondary w-[50%]'>
+		<div className='mt-[32px] px-[16px] md:px-[170px] flex flex-col gap-[24px] md:flex-row justify-between'>
+			<p className='text-[16px] text-secondary md:w-[50%]'>
 				I am open to freelance opportunities, and I had be happy to discuss how
 				I can contribute to your project. If you have any other inquiries,
 				please feel free to get in touch.
@@ -15,6 +15,7 @@ function Contact() {
 				<a
 					href='https://wa.me/917994507560'
 					target='_blank'
+					rel='noopener noreferrer'
 					className='flex items-center gap-[8px]'
 				>
 					<FaWhatsappSquare className='text-secondary text-[32px]' />
@@ -23,6 +24,7 @@ function Contact() {
 				<a
 					href='mailto:minhajzein@gmail.com'
 					target='_blank'
+					rel='noopener noreferrer'
 					className='flex items-center gap-[8px]'
 				>
 					<MdEmail className='text-secondary text-[32px]' />

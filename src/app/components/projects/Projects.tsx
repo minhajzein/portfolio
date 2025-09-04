@@ -33,7 +33,7 @@ const projects: Project[] = [
 
 function Projects() {
 	return (
-		<div className='grid grid-cols-3 gap-[18px] mt-[32px] px-[170px]'>
+		<div className='grid md:grid-cols-3 gap-[18px] mt-[32px] px-[16px] md:px-[170px]'>
 			{projects.map((project, i) => (
 				<ProjectCard key={`${project.title}-${i}`} project={project} />
 			))}

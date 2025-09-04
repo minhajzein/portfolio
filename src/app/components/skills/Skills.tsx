@@ -6,7 +6,7 @@ const skills = ['NextJs', 'NodeJs', 'MongoDB', 'Express', 'MongoDB']
 
 function Skills() {
 	return (
-		<div className='flex px-[170px] mt-[32px] relative'>
+		<div className='flex px-[16px] flex-col md:flex-row md:px-[170px] mt-[32px] relative'>
 			<Image
 				src='/images/dots.png'
 				alt='dots'
@@ -15,7 +15,7 @@ function Skills() {
 				sizes='100vw'
 				className='size-[84px] absolute left-0 -translate-x-1/2 top-1/2 z-40'
 			/>
-			<div className='min-w-[50%] relative'>
+			<div className='min-w-[50%] relative overflow-x-hidden'>
 				<CubeAnimation skills={skills} />
 				<Image
 					src='/images/logo.png'
@@ -27,7 +27,7 @@ function Skills() {
 				/>
 			</div>
 
-			<div className='md:min-w-[50%] text-[16px] grid grid-cols-3 gap-[12px]'>
+			<div className='md:min-w-[50%] text-[16px] grid md:grid-cols-3 gap-[12px]'>
 				<div className='flex flex-col border h-fit border-secondary'>
 					<div className='border-b p-[8px] border-secondary'>
 						<p>Languages</p>
