@@ -6,6 +6,8 @@ import {
 	FaInstagramSquare,
 	FaLinkedin,
 } from 'react-icons/fa'
+import TransitionLink from './TransitionLink'
+import Link from 'next/link'
 
 function Header() {
 	return (
@@ -18,22 +20,22 @@ function Header() {
 				<FaInstagramSquare className='text-[20px] text-secondary' />
 			</div>
 			<div className='flex items-center gap-[4px]'>
-				<h1 className='text-[16px]'>
+				<Link href='/' className='text-[16px]'>
 					<span className='text-primary'>Minhaj</span> zein
-				</h1>
+				</Link>
 			</div>
 			<ol className='flex text-[16px] capitalize gap-[32px]'>
 				<li>
-					<span className='text-primary'>#</span>home
+					<TransitionLink label='home' href='/' />
 				</li>
 				<li>
-					<span className='text-primary'>#</span>works
+					<TransitionLink label='works' href='/projects' />
 				</li>
 				<li>
-					<span className='text-primary'>#</span>about-me
+					<TransitionLink label='about-me' href='/about-me' />
 				</li>
 				<li>
-					<span className='text-primary'>#</span>contact-me
+					<TransitionLink label='contact-me' href='/contact-me' />
 				</li>
 			</ol>
 		</div>

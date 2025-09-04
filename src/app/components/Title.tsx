@@ -9,7 +9,13 @@ import Link from 'next/link'
 
 gsap.registerPlugin(ScrambleTextPlugin, ScrollTrigger, useGSAP)
 
-function Title({ title, link }: { title: string; link: string | null }) {
+function Title({
+	title,
+	link,
+}: {
+	title: string
+	link: string | null | undefined
+}) {
 	const textRef = useRef<HTMLHeadingElement>(null)
 
 	useGSAP(() => {
@@ -46,7 +52,7 @@ function Title({ title, link }: { title: string; link: string | null }) {
 	return (
 		<div className='flex justify-between items-center mt-[52px] w-full px-[170px]'>
 			<div className='flex items-center gap-[12px] w-[50%]'>
-				<h1 className='text-[32px]'>
+				<h1 className='text-[32px] text-nowrap'>
 					<span className='text-primary'>#</span>
 					<span ref={textRef}>{title}</span>
 				</h1>

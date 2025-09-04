@@ -22,7 +22,7 @@ function ProjectCard({ project }: { project: Project }) {
 				<a
 					href={project.live}
 					target='_blank'
-					className='h-[32px] w-[110] flex justify-center items-center text-[16px] px-[12px] hover:bg-primary/20 border border-primary'
+					className='h-[32px] duration-300 w-[110] flex justify-center items-center text-[16px] px-[12px] hover:bg-primary/20 border border-primary'
 				>{`Live <~>`}</a>
 			</div>
 		</div>
