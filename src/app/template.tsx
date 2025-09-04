@@ -12,7 +12,7 @@ function Template({ children }: { children: React.ReactNode }) {
 		animatePageIn()
 	})
 	return (
-		<div className='w-full min-h-dvh'>
+		<div>
 			<div
 				id='banner-1'
 				className='min-h-dvh w-1/4 fixed top-0 left-0 z-50 bg-neutral-950'

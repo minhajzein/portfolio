@@ -9,8 +9,8 @@ import {
 
 function Footer() {
 	return (
-		<div className='px-[170px] py-[32px] border-t gap-[32px] mt-[52px] flex flex-col'>
-			<div className='flex justify-between'>
+		<div className='px-[16px] md:px-[170px] py-[32px] border-t gap-[32px] mt-[52px] flex flex-col'>
+			<div className='flex flex-col md:flex-row gap-[12px] md:justify-between'>
 				<div className='flex flex-col gap-[8px]'>
 					<h1 className='text-[16px]'>
 						Minhaj Zein{' '}
@@ -23,10 +23,34 @@ function Footer() {
 				<div className='flex flex-col'>
 					<h1 className='text-[24px]'>Media</h1>
 					<div className='flex items-center gap-[12px]'>
-						<FaGithub className='text-[20px] text-secondary' />
-						<FaLinkedin className='text-[20px] text-secondary' />
-						<FaFacebook className='text-[20px] text-secondary' />
-						<FaInstagramSquare className='text-[20px] text-secondary' />
+						<a
+							href='https://github.com/minhajzein'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							<FaGithub className='text-[20px] text-secondary' />
+						</a>
+						<a
+							href='http://www.linkedin.com/in/minhajzein'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							<FaLinkedin className='text-[20px] text-secondary' />
+						</a>
+						<a
+							href='https://www.facebook.com/muhammed.minhajzein.5'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							<FaFacebook className='text-[20px] text-secondary' />
+						</a>
+						<a
+							href='https://www.instagram.com/minhaaaj__'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							<FaInstagramSquare className='text-[20px] text-secondary' />
+						</a>
 					</div>
 				</div>
 			</div>

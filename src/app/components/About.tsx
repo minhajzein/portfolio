@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 function About() {
 	return (
-		<div className='grid grid-cols-2 px-[170px] mt-[32px]'>
+		<div className='grid md:grid-cols-2 px-[16px] md:px-[170px] mt-[32px]'>
 			<div className='flex flex-col gap-[32px]'>
 				<p className='text-[16px]'>
 					{`Hello, I'm Minhaj!`} <br />
@@ -30,7 +30,7 @@ function About() {
 					{'Read more ~>'}
 				</Link>
 			</div>
-			<div className='flex justify-end relative'>
+			<div className='flex justify-end relative overflow-hidden'>
 				<Image
 					src='/images/logo.png'
 					alt='logo'

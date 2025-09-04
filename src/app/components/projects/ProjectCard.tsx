@@ -21,6 +21,7 @@ function ProjectCard({ project }: { project: Project }) {
 				<p className='text-[16px] text-secondary'>{project.tagline}</p>
 				<a
 					href={project.live}
+					rel='noopener noreferrer'
 					target='_blank'
 					className='h-[32px] duration-300 w-[110] flex justify-center items-center text-[16px] px-[12px] hover:bg-primary/20 border border-primary'
 				>{`Live <~>`}</a>

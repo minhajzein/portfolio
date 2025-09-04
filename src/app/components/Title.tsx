@@ -50,9 +50,9 @@ function Title({
 	}, [])
 
 	return (
-		<div className='flex justify-between items-center mt-[52px] w-full px-[170px]'>
-			<div className='flex items-center gap-[12px] w-[50%]'>
-				<h1 className='text-[32px] text-nowrap'>
+		<div className='flex justify-between items-center mt-[52px] w-full px-[16px] md:px-[170px]'>
+			<div className='flex items-center gap-[12px] w-[60%] md:w-[50%]'>
+				<h1 className='text-[24px] md:text-[32px] text-nowrap'>
 					<span className='text-primary'>#</span>
 					<span ref={textRef}>{title}</span>
 				</h1>
@@ -61,7 +61,7 @@ function Title({
 			{link && (
 				<Link
 					href={link}
-					className='text-[16px] h-[32px] px-[24px] hover:bg-primary/20 hover:border border-primary duration-300 flex items-center'
+					className='text-[12px] md:text-[16px] h-[32px] md:px-[24px] hover:bg-primary/20 hover:border border-primary duration-300 flex items-center'
 				>
 					{'View all ~~>'}
 				</Link>
