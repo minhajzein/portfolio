@@ -22,13 +22,13 @@ function Contact() {
 					<h1 className='text-secondary'>+91 79945 07560</h1>
 				</a>
 				<a
-					href='mailto:minhajzein@gmail.com'
+					href='mailto:minhaj@reveinfotech.com'
 					target='_blank'
 					rel='noopener noreferrer'
 					className='flex items-center gap-[8px]'
 				>
 					<MdEmail className='text-secondary text-[32px]' />
-					<h1 className='text-secondary'>minhajzein@gmail.com</h1>
+					<h1 className='text-secondary'>minhaj@reveinfotech.com</h1>
 				</a>
 			</div>
 		</div>
