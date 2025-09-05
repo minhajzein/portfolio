@@ -2,10 +2,12 @@
 
 import Link from 'next/link'
 import ImageSection from './ImageSection'
+import { usePathname } from 'next/navigation'
 
 function About() {
+	const pathname = usePathname()
 	return (
-		<div className='grid md:grid-cols-2 px-[16px] md:px-[170px] mt-[32px]'>
+		<div className='grid md:grid-cols-2'>
 			<div className='flex flex-col gap-[32px]'>
 				<p className='text-[16px]'>
 					{`Hello, I'm Minhaj!`} <br />
@@ -23,12 +25,14 @@ function About() {
 					always eager to explore the latest technologies and frameworks to
 					deliver the best results.`}
 				</p>
-				<Link
-					href={'/about-me'}
-					className='h-[32px] text-[16px] w-fit flex items-center border border-primary hover:bg-primary/20 duration-300 px-[24px]'
-				>
-					{'Read more ~>'}
-				</Link>
+				{pathname === '/' && (
+					<Link
+						href={'/about-me'}
+						className='h-[32px] text-[16px] w-fit flex items-center border border-primary hover:bg-primary/20 duration-300 px-[24px]'
+					>
+						{'Read more ~>'}
+					</Link>
+				)}
 			</div>
 			<ImageSection />
 		</div>

@@ -10,17 +10,19 @@ import Contact from './components/Contact'
 
 export default function Home() {
 	return (
-		<div className='flex flex-col'>
+		<div className='flex flex-col overflow-hidden'>
 			<Hero />
 			<Quotes />
 			<Title title='projects' link='/projects' />
-			<div className='px-[16px] md:px-[170px] mt-[32px]'>
+			<div className='px-[16px] md:px-[170px]'>
 				<Projects />
 			</div>
 			<Title title='skills' link={null} />
 			<Skills />
 			<Title title='about-me' link={null} />
-			<About />
+			<div className='w-full px-[16px] md:px-[170px] mt-[32px]'>
+				<About />
+			</div>
 			<Title title='contact-me' link={null} />
 			<Contact />
 		</div>
