@@ -1,14 +1,14 @@
+import ProjectCard from '@/app/components/projects/ProjectCard'
 import projects from '@/lib/constants/projects'
-import ProjectCard from './ProjectCard'
 
-function Projects() {
+function MainProjects() {
 	return (
 		<div className='grid md:grid-cols-3 gap-[18px]'>
-			{projects.slice(0, 3).map((project, i) => (
+			{projects.map((project, i) => (
 				<ProjectCard key={`${project.title}-${i}`} project={project} />
 			))}
 		</div>
 	)
 }
 
-export default Projects
+export default MainProjects

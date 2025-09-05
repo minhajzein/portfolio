@@ -4,6 +4,7 @@ import './globals.css'
 import Header from '../components/header/Header'
 import Footer from '../components/footer/Footer'
 import { Analytics } from '@vercel/analytics/next'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 const firaCode = Fira_Code({
 	variable: '--font-fira',
@@ -27,6 +28,7 @@ export default function RootLayout({
 				{children}
 				<Footer />
 				<Analytics />
+				<SpeedInsights />
 			</body>
 		</html>
 	)
