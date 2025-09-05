@@ -1,23 +1,15 @@
 declare module 'imagesloaded' {
-	interface ImagesLoadedCallback {
-		(instance: any): void
-	}
-
 	interface ImagesLoaded {
 		on(
 			event: 'always' | 'done' | 'fail' | 'progress',
-			callback: ImagesLoadedCallback
-		): this
+			callback: (instance: ImagesLoaded) => void
+		): void
 	}
 
-	interface ImagesLoadedFactory {
-		(
-			elements: Element | Element[] | NodeListOf<Element>,
-			options?: object,
-			callback?: ImagesLoadedCallback
-		): ImagesLoaded
-	}
+	function imagesLoaded(
+		elem: Element | Element[] | NodeListOf<Element> | string,
+		callback?: (instance: ImagesLoaded) => void
+	): ImagesLoaded
 
-	const imagesLoaded: ImagesLoadedFactory
 	export default imagesLoaded
 }
