@@ -9,7 +9,7 @@ import {
 
 function Footer() {
 	return (
-		<div className='px-[16px] md:px-[170px] py-[32px] border-t gap-[32px] mt-[52px] flex flex-col'>
+		<div className='px-[16px] md:px-[170px] py-[32px] border-t gap-[32px] mt-[82px] flex flex-col'>
 			<div className='flex flex-col md:flex-row gap-[12px] md:justify-between'>
 				<div className='flex flex-col gap-[8px]'>
 					<h1 className='text-[16px]'>

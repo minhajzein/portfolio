@@ -43,8 +43,8 @@ function Title({
 			},
 			scrollTrigger: {
 				trigger: textRef.current,
-				start: 'top 80%',
-				toggleActions: 'play none none none',
+				start: 'top 50%',
+				toggleActions: 'play reverse play reverse',
 			},
 		})
 	}, [])
@@ -54,7 +54,9 @@ function Title({
 			<div className='flex items-center gap-[12px] w-[60%] md:w-[50%]'>
 				<h1 className='text-[24px] md:text-[32px] text-nowrap'>
 					<span className='text-primary'>#</span>
-					<span ref={textRef}>{title}</span>
+					<span className='text-nowrap' ref={textRef}>
+						{title}
+					</span>
 				</h1>
 				<div className='h-[1px] w-full bg-primary'></div>
 			</div>

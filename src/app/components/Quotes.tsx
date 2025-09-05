@@ -7,7 +7,7 @@ function Quotes() {
 		<div className='flex px-[16px] md:px-[170px] py-[30px]'>
 			<div className='flex flex-col m-auto items-end'>
 				<div className='border p-[12px] relative'>
-					<ImQuotesLeft className='bg-background absolute top-0 left-[12px] p-[4px] -translate-y-1/2' />
+					<ImQuotesLeft className='bg-background absolute text-[24px] top-0 left-[12px] p-[4px] -translate-y-1/2' />
 					<h1 className='text-[16px] md:text-[24px] p-[12px]'>
 						With great power comes great electricity bill
 					</h1>
