@@ -111,7 +111,7 @@ export function disintegrateAnimation(captureEl: HTMLElement) {
 		}
 
 		dataList.forEach((data, i) => {
-			let clonedCanvas = canvas.cloneNode() as HTMLCanvasElement
+			const clonedCanvas = canvas.cloneNode() as HTMLCanvasElement
 			clonedCanvas.width = width
 			clonedCanvas.height = height
 			clonedCanvas.getContext('2d')!.putImageData(data, 0, 0)
