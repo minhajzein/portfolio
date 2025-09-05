@@ -14,7 +14,7 @@ function Footer() {
 				<div className='flex flex-col gap-[8px]'>
 					<h1 className='text-[16px]'>
 						Minhaj Zein{' '}
-						<span className='text-secondary'>minhajzein@gmail.com</span>
+						<span className='text-secondary'>minhaj@reveinfotech.com</span>
 					</h1>
 					<p className='text-[16px]'>
 						Full stack developer with hands on experience
