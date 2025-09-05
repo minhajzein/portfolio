@@ -14,7 +14,7 @@ export default function Home() {
 			<Hero />
 			<Quotes />
 			<Title title='projects' link='/projects' />
-			<div className='px-[16px] md:px-[170px]'>
+			<div className='w-full px-[16px] md:px-[170px] mt-[32px]'>
 				<Projects />
 			</div>
 			<Title title='skills' link={null} />
