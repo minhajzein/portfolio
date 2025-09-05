@@ -28,7 +28,7 @@ function TitleSection() {
 			</p>
 			<Link
 				href='/contact-me'
-				className='w-[141px] h-[37px] border-primary text-[16px] hover:bg-primary/20 hover:text-primary-foreground cursor-pointer'
+				className='w-[141px] h-[37px] justify-center duration-300 flex items-center border border-primary text-[16px] hover:bg-primary/20 hover:text-primary-foreground cursor-pointer'
 			>
 				Contact me!!
 			</Link>
