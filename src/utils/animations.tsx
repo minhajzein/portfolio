@@ -89,7 +89,7 @@ export function disintegrateAnimation(captureEl: HTMLElement) {
 		const ctx = canvas.getContext('2d')!
 		const imageData = ctx.getImageData(0, 0, width, height)
 
-		let dataList: ImageData[] = []
+		const dataList: ImageData[] = []
 		captureEl.style.display = 'none'
 
 		for (let i = 0; i < COUNT; i++) {
@@ -118,7 +118,6 @@ export function disintegrateAnimation(captureEl: HTMLElement) {
 			clonedCanvas.className =
 				'absolute top-0 left-0 pointer-events-none w-full h-full'
 			document.body.appendChild(clonedCanvas)
-
 
 			const randomAngle = (Math.random() - 0.5) * 2 * Math.PI
 			const randomRotationAngle = 30 * (Math.random() - 0.5)

@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import TitleSection from './TitleSection'
 import ImageSection from './ImageSection'
 
