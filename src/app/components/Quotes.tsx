@@ -9,12 +9,12 @@ function Quotes() {
 				<div className='border p-[12px] relative'>
 					<ImQuotesLeft className='bg-background absolute text-[24px] top-0 left-[12px] p-[4px] -translate-y-1/2' />
 					<h1 className='text-[16px] md:text-[24px] p-[12px]'>
-						With great power comes great electricity bill
+						The only way to do great work is to love what you do.
 					</h1>
 					<ImQuotesRight className='bg-background absolute bottom-0 text-[24px] right-[12px] p-[4px] translate-y-1/2' />
 				</div>
 				<div className='text-[16px] md:text-[24px] border p-[12px]'>
-					<h1>- Dr. Who</h1>
+					<h1>- Steve Jobs</h1>
 				</div>
 			</div>
 		</div>
