@@ -12,12 +12,12 @@ function ImageSection() {
 				className='size-[155px] absolute left-[20px] z-20 top-[50px]'
 			/>
 			<Image
-				src='/images/my-pic.png'
+				src='/images/my-pic-1.png'
 				alt='my picture'
 				width={0}
 				height={0}
 				sizes='100vw'
-				className='md:h-[390px] h-[350px] w-full md:w-[380px] z-30'
+				className='md:h-[390px] object-contain h-auto w-full md:w-auto z-30'
 			/>
 			<Image
 				src='/images/dots.png'

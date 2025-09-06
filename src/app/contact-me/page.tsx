@@ -21,10 +21,10 @@ function ContactMe() {
 				<div className='flex flex-col md:flex-row md:gap-[12px] gap-[24px]'>
 					<div className='p-[12px] text-[16px] h-fit min-w-[200px] border border-secondary flex flex-col gap-[12px]'>
 						<h1 className='text-primary-foreground'>Support me here</h1>
-						<p className='flex items-center gap-[8px]'>
+						<div className='flex items-center gap-[8px]'>
 							<MdPayment className='text-secondary text-[32px]' />
 							<h1 className='text-secondary'>UPI: 7994507560@ybl</h1>
-						</p>
+						</div>
 					</div>
 					<div className='p-[12px] text-[16px] min-w-[200px] border border-secondary flex flex-col gap-[12px]'>
 						<h1 className='text-primary-foreground'>Contact me here</h1>
