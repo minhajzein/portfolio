@@ -1,4 +1,3 @@
-import React from 'react'
 import CubeAnimation from './CubeAnimation'
 import Image from 'next/image'
 
@@ -47,8 +46,9 @@ function Skills() {
 						<div className='flex flex-wrap gap-[8px] text-secondary p-[8px]'>
 							<p>React.js</p>
 							<p>Next.js</p>
-							<p>Express</p>
-							<p>Mongoose</p>
+							<p>Three.js</p>
+							<p>Nest.js</p>
+							<p>Express.js</p>
 						</div>
 					</div>
 					<div className='flex flex-col border h-fit border-secondary'>
@@ -83,6 +83,7 @@ function Skills() {
 							<p>MySQL</p>
 							<p>Firebase</p>
 							<p>PostgreSQL</p>
+							<p>Prisma(ORM)</p>
 						</div>
 					</div>
 					<div className='flex flex-col border h-fit border-secondary'>
@@ -110,6 +111,7 @@ function Skills() {
 							<p>SCSS</p>
 							<p>Flowbite</p>
 							<p>Gsap</p>
+							<p>React Three Fiber</p>
 						</div>
 					</div>
 				</div>
