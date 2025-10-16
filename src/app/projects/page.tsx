@@ -1,8 +1,14 @@
-import React from 'react'
 import MainProjects from './components/MainProjects'
 import PageTitle from '@/components/PageTitle'
 import Title from './components/Title'
 import MiniProjects from './components/mini-projects/MiniProjects'
+
+export const metadata = {
+	title:
+		"Minhaj's Portfolio – MERN Full Stack Web Applications | Calicut, Kerala",
+	description:
+		'Explore Minhaj’s MERN full stack web development projects in Calicut, Kerala. See custom web applications, responsive UIs, secure backends, and scalable solutions built for businesses.',
+}
 
 function Projects() {
 	return (

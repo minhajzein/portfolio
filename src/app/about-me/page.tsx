@@ -1,9 +1,15 @@
 import PageTitle from '@/components/PageTitle'
-import React from 'react'
 import About from '../components/about/About'
 import Title from '../projects/components/Title'
 import Skills from './components/Skills'
 import FunFacts from './components/FunFacts'
+
+export const metadata = {
+	title:
+		'About Minhaj - MERN Full Stack Developer in Calicut, Kerala | Web Applications Expert',
+	description:
+		'Learn more about Minhaj, a MERN full stack developer in Calicut, Kerala with 3+ years experience. He builds scalable, secure, and responsive web applications to solve real business challenges.',
+}
 
 function AboutMe() {
 	return (

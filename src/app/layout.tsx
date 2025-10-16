@@ -13,8 +13,10 @@ const firaCode = Fira_Code({
 })
 
 export const metadata: Metadata = {
-	title: 'Minhaj',
-	description: 'Full stack developer',
+	title:
+		'Minhaj | MERN Full Stack Web Developer in Calicut, Kerala - Web Applications & Custom Solutions',
+	description:
+		'Minhaj is a MERN full stack web developer based in Calicut, Kerala. He builds custom, scalable, secure, and responsive web applications that solve business problems and improve user experience.',
 }
 
 export default function RootLayout({

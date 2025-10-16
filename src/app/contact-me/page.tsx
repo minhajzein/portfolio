@@ -1,9 +1,14 @@
 import PageTitle from '@/components/PageTitle'
-import React from 'react'
 import { FaWhatsappSquare } from 'react-icons/fa'
 import { MdEmail, MdPayment } from 'react-icons/md'
 import Title from '../projects/components/Title'
 import Medias from './components/Medias'
+
+export const metadata = {
+	title: 'Contact Minhaj – MERN Full Stack Web Developer | Calicut, Kerala',
+	description:
+		'Get in touch with Minhaj, a MERN full stack developer in Calicut, Kerala. Discuss your custom web application project, ask questions, or request a consultation today.',
+}
 
 function ContactMe() {
 	return (
