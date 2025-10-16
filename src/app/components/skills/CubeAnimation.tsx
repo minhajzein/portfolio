@@ -114,10 +114,10 @@ export default function CubeAnimation({ skills }: { skills: string[] }) {
 	return (
 		<div
 			ref={povRef}
-			className='pov flex items-center justify-center w-full h-[500px] md:h-full overflow-hidden font-[Montserrat] font-black'
+			className='pov flex items-center justify-center w-full h-[500px] md:h-[600px] overflow-hidden font-[Montserrat] font-black'
 		>
 			<div className='tray relative'>
-				<div className='die w-[300px] h-[55px] pb-[9px] perspective-[999px]'>
+				<div className='die w-auto h-[55px] pb-[9px] perspective-[999px]'>
 					<div className='cube absolute w-full h-full [transform-style:preserve-3d]'>
 						{skills.map((skill, i) => (
 							<div

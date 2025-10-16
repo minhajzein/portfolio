@@ -52,12 +52,12 @@ function Title({
 	return (
 		<div className='flex justify-between items-center mt-[52px] w-full px-[16px] md:px-[170px]'>
 			<div className='flex items-center gap-[12px] w-[60%] md:w-[50%]'>
-				<h1 className='text-[24px] md:text-[32px] text-nowrap'>
+				<h2 className='text-[24px] md:text-[32px] text-nowrap'>
 					<span className='text-primary'>#</span>
 					<span className='text-nowrap' ref={textRef}>
 						{title}
 					</span>
-				</h1>
+				</h2>
 				<div className='h-[1px] w-full bg-primary'></div>
 			</div>
 			{link && (
