@@ -19,9 +19,9 @@ function ContactMe() {
 			/>
 			<div className='flex flex-col gap-[24px] md:flex-row md:justify-between'>
 				<p className='text-[16px] text-secondary w-full md:w-[50%]'>
-					I am open to freelance opportunities, and I had be happy to discuss
-					how I can contribute to your project. If you have any other inquiries,
-					please feel free to get in touch.
+					{`Have an idea or a project you want to discuss?
+                     Whether it’s a startup, small business, or enterprise solution,
+					  I’ll help you build a web application that works for you and your users.`}
 				</p>
 				<div className='flex flex-col md:flex-row md:gap-[12px] gap-[24px]'>
 					<div className='p-[12px] text-[16px] h-fit min-w-[200px] border border-secondary flex flex-col gap-[12px]'>

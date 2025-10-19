@@ -12,18 +12,10 @@ function About() {
 				<p className='text-[16px]'>
 					{`Hello, I'm Minhaj!`} <br />
 					<br />
-					{`I'm a full-stack developer with 3 years of experience,
-					passionate about building scalable, efficient, and user-friendly web
-					applications. From designing responsive front-end interfaces to
-					developing robust back-end systems, I specialize in turning ideas into
-					functional digital solutions.`}
+					{`I'm a MERN full stack web developer based in Calicut, Kerala, helping businesses build custom web applications that solve real problems.`}
 					<br />
 					<br />
-					{`Over the past few years, I've worked on diverse
-					projects—helping businesses and clients establish a strong online
-					presence through modern, secure, and high-performing applications. I'm
-					always eager to explore the latest technologies and frameworks to
-					deliver the best results.`}
+					{`If your current systems are slow, manual, or your website isn't performing, I create scalable, efficient, and user-friendly web solutions that improve operations, enhance user experience, and help your business grow.`}
 				</p>
 				{pathname === '/' && (
 					<Link
