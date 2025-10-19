@@ -9,16 +9,33 @@ import React from 'react'
 gsap.registerPlugin(SplitText, Physics2DPlugin, ScrollTrigger)
 
 export function splitTextAnimation(
-	container: React.RefObject<HTMLDivElement | null> | HTMLDivElement | null
+	container: React.RefObject<HTMLDivElement | null> | HTMLDivElement | null,
+	onComplete?: () => void
 ) {
 	const root =
 		container && 'current' in container ? container.current : container
 	const element = root?.querySelector('#split-text')
 	if (!element) return
 
+	gsap.killTweensOf(element)
+	gsap.set(element, { opacity: 0 })
+
 	document.fonts.ready.then(() => {
 		const split = new SplitText(element, { type: 'chars' })
-		const tl = gsap.timeline({ repeat: -1 })
+
+		const tl = gsap.timeline({
+			onStart: () => {
+				gsap.set(element, { opacity: 1 })
+			},
+			onComplete: () => {
+				if (element && element.parentNode) {
+					// Keep the text in its final animated state (opacity: 0)
+					// Don't revert the split text to prevent showing full text
+					gsap.set(element, { opacity: 0 })
+					onComplete && onComplete()
+				}
+			},
+		})
 
 		gsap.set(element, { opacity: 1 })
 
@@ -30,8 +47,8 @@ export function splitTextAnimation(
 			ease: 'elastic',
 			stagger: 0.03,
 		}).to(split.chars, {
-			duration: 2.5,
-			delay: 3,
+			duration: 1.8,
+			delay: 2.5,
 			opacity: 0,
 			rotation: 'random(-2000, 2000)',
 			physics2D: {

@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 function ImageSection() {
 	return (
-		<div className='flex flex-col relative'>
+		<div className='flex flex-col items-center md:min-w-[40%] relative'>
 			<Image
 				src='/images/logo.png'
 				alt='logo'
@@ -17,7 +17,7 @@ function ImageSection() {
 				width={0}
 				height={0}
 				sizes='100vw'
-				className='md:h-[390px] object-contain h-auto w-full md:w-auto z-30'
+				className='md:h-[390px] object-contain h-auto w-full md:w-[70%] z-30'
 			/>
 			<Image
 				src='/images/dots.png'
