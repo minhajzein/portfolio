@@ -27,7 +27,7 @@ export const heroOptions = [
 			<h1 id='split-text' className='md:text-4xl text-xl sm:text-2xl opacity-0 leading-tight md:leading-normal'>
 				Need More Than a <span className='text-primary'>Website?</span>
 				<br />I Build <span className='text-primary'>Web Apps</span> That
-				Perform.
+				<br />Perform.
 			</h1>
 		),
 		description: (
