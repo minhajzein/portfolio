@@ -10,7 +10,7 @@ function Approach() {
 			<br />
 			<p>{`Here’s how I work:`}</p>
 			<br />
-			<ul className='list-decimal md:pl-12 pl-2'>
+			<ul className='list-decimal md:pl-12 pl-6 gap-2'>
 				<li>
 					<span className='text-primary'>Listen first:</span> Understand your
 					requirements, pain points, and objectives.
