@@ -1,6 +1,6 @@
 function Skills() {
 	return (
-		<div className='w-full text-[16px] grid grid-cols-2 md:grid-cols-3 gap-[12px]'>
+		<div className='w-full text-[16px] grid md:grid-cols-3 gap-[12px]'>
 			<div className='flex flex-col border h-fit border-secondary'>
 				<div className='border-b p-[8px] border-secondary'>
 					<p>Frontend Development</p>
