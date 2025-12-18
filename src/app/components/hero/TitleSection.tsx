@@ -11,13 +11,13 @@ export const heroOptions = [
 		id: 1,
 		title: (
 			<h1 id='split-text' className='md:text-4xl text-xl sm:text-2xl opacity-0 leading-tight md:leading-normal'>
-				Tired of <span className='text-primary'>Slow Systems?</span>
-				<br />I Build <span className='text-primary'>Scalable Apps.</span>
+				Scaling Your <span className='text-primary'>Business?</span>
+				<br />I Build <span className='text-primary'>Global</span> Web Apps.
 			</h1>
 		),
 		description: (
 			<p className='text-sm sm:text-base leading-relaxed'>
-				{`MERN Full Stack Developer building automated systems that streamline workflows and boost efficiency.`}
+				{`Specializing in high-performance Ecommerce and Booking platforms for clients worldwide.`}
 			</p>
 		),
 	},
@@ -25,14 +25,13 @@ export const heroOptions = [
 		id: 2,
 		title: (
 			<h1 id='split-text' className='md:text-4xl text-xl sm:text-2xl opacity-0 leading-tight md:leading-normal'>
-				Need More Than a <span className='text-primary'>Website?</span>
-				<br />I Build <span className='text-primary'>Web Apps</span> That
-				<br />Perform.
+				Need a Custom <span className='text-primary'>CRM?</span>
+				<br />I Build <span className='text-primary'>Tools</span> That Work.
 			</h1>
 		),
 		description: (
 			<p className='text-sm sm:text-base leading-relaxed'>
-				{`MERN expertise crafting sleek interfaces and solid backends that help your business grow.`}
+				{`Streamline your operations with tailored CRM and LMS solutions designed for efficiency.`}
 			</p>
 		),
 	},
@@ -40,13 +39,13 @@ export const heroOptions = [
 		id: 3,
 		title: (
 			<h1 id='split-text' className='md:text-4xl text-xl sm:text-2xl opacity-0 leading-tight md:leading-normal'>
-				Still Doing Tasks <span className='text-primary'>Manually?</span>
-				<br />I Build <span className='text-primary'>Smart Tools.</span>
+				Targeting the <span className='text-primary'>World?</span>
+				<br />Get <span className='text-primary'>Enterprise</span> Grade.
 			</h1>
 		),
 		description: (
 			<p className='text-sm sm:text-base leading-relaxed'>
-				{`Clean UIs to strong APIs, creating solutions that simplify work and save time.`}
+				{`Robust, secure, and scalable web applications built with the MERN stack for global reach.`}
 			</p>
 		),
 	},
@@ -62,7 +61,7 @@ export const heroOptions = [
 		),
 		description: (
 			<p className='text-sm sm:text-base leading-relaxed'>
-				{`End-to-end MERN development keeping your business modern, reliable, and scalable.`}
+				{`Modernize your business with next-gen web technology that handles traffic from anywhere.`}
 			</p>
 		),
 	},
@@ -76,7 +75,7 @@ export const heroOptions = [
 		),
 		description: (
 			<p className='text-sm sm:text-base leading-relaxed'>
-				{`3+ years full stack experience handling design, backend, and launch from start to finish.`}
+				{`Full stack development from concept to global launch, handling every technical detail.`}
 			</p>
 		),
 	},

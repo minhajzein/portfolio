@@ -12,10 +12,10 @@ function About() {
 				<p className='text-[16px]'>
 					{`Hello, I'm Minhaj!`} <br />
 					<br />
-					{`I'm a MERN full stack web developer based in Calicut, Kerala, helping businesses build custom web applications that solve real problems.`}
+					{`I'm a Full Stack Web Developer specializing in building high-performance Ecommerce, CRM, LMS, and Booking platforms for clients worldwide.`}
 					<br />
 					<br />
-					{`If your current systems are slow, manual, or your website isn't performing, I create scalable, efficient, and user-friendly web solutions that improve operations, enhance user experience, and help your business grow.`}
+					{`Whether you're a startup or an established business, I create scalable, secure, and custom web solutions that streamline operations and drive growth—no matter where you are located.`}
 				</p>
 				{pathname === '/' && (
 					<Link
@@ -27,7 +27,7 @@ function About() {
 				)}
 			</div>
 			<ImageSection />
-		</div>
+		</div >
 	)
 }
 

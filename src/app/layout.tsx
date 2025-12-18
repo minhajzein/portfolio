@@ -14,9 +14,9 @@ const firaCode = Fira_Code({
 
 export const metadata: Metadata = {
 	title:
-		'Minhaj | MERN Full Stack Web Developer in Calicut, Kerala - Web Applications & Custom Solutions',
+		'Minhaj | Full Stack Web Developer - Ecommerce, CRM, LMS & Booking Systems',
 	description:
-		'Minhaj is a MERN full stack web developer based in Calicut, Kerala. He builds custom, scalable, secure, and responsive web applications that solve business problems and improve user experience.',
+		'Expert MERN Stack Developer building scalable web applications worldwide. Specializing in Ecommerce, CRM, LMS, and Booking Platforms. Custom solutions for global businesses.',
 }
 
 export default function RootLayout({
@@ -37,7 +37,10 @@ export default function RootLayout({
 					`}
 				</Script>
 			</head>
-			<body className={`${firaCode.variable} antialiased`}>
+			<body
+				className={`${firaCode.variable} antialiased`}
+				suppressHydrationWarning
+			>
 				<noscript>
 					<iframe
 						src='https://www.googletagmanager.com/ns.html?id=GTM-NZR7XK7V'

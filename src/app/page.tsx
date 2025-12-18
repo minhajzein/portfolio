@@ -7,6 +7,8 @@ import Title from './components/Title'
 import Skills from './components/skills/Skills'
 import About from './components/about/About'
 import Contact from './components/Contact'
+import Specializations from './components/specializations/Specializations'
+import BlogSection from './components/blog/BlogSection'
 
 export default function Home() {
 	return (
@@ -19,9 +21,17 @@ export default function Home() {
 			</div>
 			<Title title='skills' link={null} />
 			<Skills />
+			<Title title='specializations' link={null} />
+			<div className='w-full px-[16px] md:px-[170px] mt-[32px]'>
+				<Specializations />
+			</div>
 			<Title title='about-me' link={null} />
 			<div className='w-full px-[16px] md:px-[170px] mt-[32px]'>
 				<About />
+			</div>
+			<Title title='blog' link={null} />
+			<div className='w-full px-[16px] md:px-[170px] mt-[32px]'>
+				<BlogSection />
 			</div>
 			<Title title='contact-me' link={null} />
 			<Contact />
