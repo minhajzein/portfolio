@@ -12,11 +12,99 @@ const firaCode = Fira_Code({
 	subsets: ['latin'],
 })
 
+const jsonLd = {
+	'@context': 'https://schema.org',
+	'@type': 'Person',
+	name: 'Minhaj Zein',
+	url: 'https://minhaj.reveinfotech.com',
+	jobTitle: 'Full Stack Developer',
+	sameAs: [
+		'https://github.com/minhajzein',
+		'http://www.linkedin.com/in/minhajzein',
+		'https://www.facebook.com/muhammed.minhajzein.5',
+		'https://www.instagram.com/minhaaaj__',
+	],
+	knowsAbout: [
+		'Full Stack Development',
+		'MERN Stack',
+		'React',
+		'Next.js',
+		'Ecommerce',
+		'CRM',
+		'LMS',
+		'Booking Systems',
+		'Web Development',
+	],
+	description:
+		'Expert MERN Stack Developer building scalable web applications worldwide. Specializing in Ecommerce, CRM, LMS, and Booking Platforms.',
+}
+
 export const metadata: Metadata = {
-	title:
-		'Minhaj | Full Stack Web Developer - Ecommerce, CRM, LMS & Booking Systems',
+	title: {
+		default:
+			'Minhaj | Full Stack Web Developer - Ecommerce, CRM, LMS & Booking Systems',
+		template: '%s | Minhaj - Full Stack Developer',
+	},
 	description:
 		'Expert MERN Stack Developer building scalable web applications worldwide. Specializing in Ecommerce, CRM, LMS, and Booking Platforms. Custom solutions for global businesses.',
+	keywords: [
+		'Full Stack Developer',
+		'MERN Stack',
+		'React',
+		'Next.js',
+		'Ecommerce',
+		'CRM',
+		'LMS',
+		'Booking Systems',
+		'Web Development',
+		'Software Engineer',
+		'Global Web Solutions',
+		'Minhaj Zein',
+		'Portfolio',
+	],
+	authors: [{ name: 'Minhaj Zein', url: 'https://minhaj.reveinfotech.com' }],
+	creator: 'Minhaj Zein',
+	publisher: 'Minhaj Zein',
+	robots: {
+		index: true,
+		follow: true,
+		googleBot: {
+			index: true,
+			follow: true,
+			'max-video-preview': -1,
+			'max-image-preview': 'large',
+			'max-snippet': -1,
+		},
+	},
+	openGraph: {
+		title:
+			'Minhaj | Full Stack Web Developer - Ecommerce, CRM, LMS & Booking Systems',
+		description:
+			'Expert MERN Stack Developer building scalable web applications worldwide. Specializing in Ecommerce, CRM, LMS, and Booking Platforms.',
+		url: 'https://minhaj.reveinfotech.com',
+		siteName: 'Minhaj Zein Portfolio',
+		locale: 'en_US',
+		type: 'website',
+		images: [
+			{
+				url: '/images/my-pic-1.png', // Using existing personal image
+				width: 1200,
+				height: 630,
+				alt: 'Minhaj Zein - Full Stack Developer',
+			},
+		],
+	},
+	twitter: {
+		card: 'summary_large_image',
+		title: 'Minhaj | Full Stack Web Developer',
+		description:
+			'Expert MERN Stack Developer building scalable web applications worldwide.',
+		creator: '@minhajzein',
+		images: ['/images/my-pic-1.png'],
+	},
+	alternates: {
+		canonical: 'https://minhaj.reveinfotech.com',
+	},
 }
 
 export default function RootLayout({
@@ -49,11 +137,17 @@ export default function RootLayout({
 						style={{ display: 'none', visibility: 'hidden' }}
 					></iframe>
 				</noscript>
+
 				<Header />
 				{children}
 				<Footer />
 				<Analytics />
 				<SpeedInsights />
+				<Script
+					id='json-ld'
+					type='application/ld+json'
+					dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+				/>
 			</body>
 		</html>
 	)
