@@ -9,6 +9,7 @@ import About from './components/about/About'
 import Contact from './components/Contact'
 import Specializations from './components/specializations/Specializations'
 import BlogSection from './components/blog/BlogSection'
+import Testimonials from './components/testimonials/Testimonials'
 
 export default function Home() {
 	return (
@@ -29,7 +30,11 @@ export default function Home() {
 			<div className='w-full px-[16px] md:px-[170px] mt-[32px]'>
 				<About />
 			</div>
-			<Title title='blog' link='/blogs' />
+			<Title title='testimonials' link={null} />
+			<div className='w-full px-[16px] md:px-[170px] mt-[32px]'>
+				<Testimonials />
+			</div>
+			<Title title='blogs' link='/blogs' />
 			<div className='w-full px-[16px] md:px-[170px] mt-[32px]'>
 				<BlogSection />
 			</div>
