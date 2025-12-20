@@ -13,8 +13,30 @@ export async function generateMetadata({
     if (!blog) return {}
 
     return {
-        title: `${blog.title} | Minhaj's Blog`,
+        title: blog.title,
         description: blog.description,
+        openGraph: {
+            title: blog.title,
+            description: blog.description,
+            url: `https://minhaj.reveinfotech.com/blog/${id}`,
+            siteName: 'Minhaj Zein Portfolio',
+            images: [
+                {
+                    url: blog.image,
+                    width: 1200,
+                    height: 630,
+                    alt: blog.title,
+                },
+            ],
+            locale: 'en_US',
+            type: 'article',
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: blog.title,
+            description: blog.description,
+            images: [blog.image],
+        },
     }
 }
 

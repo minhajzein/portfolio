@@ -40,6 +40,7 @@ const jsonLd = {
 }
 
 export const metadata: Metadata = {
+	metadataBase: new URL('https://minhaj.reveinfotech.com'),
 	title: {
 		default:
 			'Minhaj | Full Stack Web Developer - Ecommerce, CRM, LMS & Booking Systems',
