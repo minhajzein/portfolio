@@ -29,7 +29,7 @@ export default function Home() {
 			<div className='w-full px-[16px] md:px-[170px] mt-[32px]'>
 				<About />
 			</div>
-			<Title title='blog' link={null} />
+			<Title title='blog' link='/blogs' />
 			<div className='w-full px-[16px] md:px-[170px] mt-[32px]'>
 				<BlogSection />
 			</div>

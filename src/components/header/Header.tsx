@@ -15,8 +15,9 @@ import { useState } from 'react'
 const navItems = [
 	{ id: 1, label: 'home', href: '/' },
 	{ id: 2, label: 'works', href: '/projects' },
-	{ id: 3, label: 'about-me', href: '/about-me' },
-	{ id: 4, label: 'contact-me', href: '/contact-me' },
+	{ id: 3, label: 'blogs', href: '/blogs' },
+	{ id: 4, label: 'about-me', href: '/about-me' },
+	{ id: 5, label: 'contact-me', href: '/contact-me' },
 ]
 
 function Header() {
@@ -77,9 +78,8 @@ function Header() {
 			</Button>
 
 			<ol
-				className={`${
-					isOpen ? 'left-0' : '-left-full'
-				} flex flex-col md:static absolute duration-300 top-0 bg-background w-screen md:w-auto md:pb-0 md:px-0 px-[16px] pt-[140px] md:pt-0 pb-[80px] h-dvh md:h-auto md:flex-row capitalize gap-[52px] md:gap-[32px]`}
+				className={`${isOpen ? 'left-0' : '-left-full'
+					} flex flex-col md:static absolute duration-300 top-0 bg-background w-screen md:w-auto md:pb-0 md:px-0 px-[16px] pt-[140px] md:pt-0 pb-[80px] h-dvh md:h-auto md:flex-row capitalize gap-[52px] md:gap-[32px]`}
 			>
 				{navItems.map(item => (
 					<li key={item.id}>

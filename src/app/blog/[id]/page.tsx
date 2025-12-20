@@ -54,7 +54,7 @@ export default async function BlogPostPage({
                         </span>
                     ))}
                 </div>
-                <h1 className='text-[32px] md:text-[48px] font-bold leading-tight'>
+                <h1 className='text-[24px] md:text-[32px] font-normal leading-tight'>
                     {blog.title}
                 </h1>
                 <p className='text-secondary text-[16px]'>{blog.date}</p>
@@ -76,7 +76,13 @@ export default async function BlogPostPage({
             {/* Content */}
             <div className='w-full px-[16px] md:px-[170px] mt-[48px]'>
                 <article
-                    className='prose prose-invert prose-lg max-w-none text-foreground'
+                    className='prose prose-invert max-w-none text-foreground 
+                        [&>p]:mb-6 [&>p]:leading-relaxed [&>p]:text-[16px] [&>p]:font-normal
+                        [&>h3]:mt-10 [&>h3]:mb-4 [&>h3]:text-[20px] [&>h3]:font-normal
+                        [&>ul]:mb-6 [&>ul]:mt-4 [&>ul]:space-y-3
+                        [&>ul>li]:leading-relaxed [&>ul>li]:text-[16px] [&>ul>li]:font-normal
+                        [&>ul>li]:ml-6 [&>ul>li]:pl-2
+                        [&_strong]:font-normal [&_strong]:text-primary'
                     dangerouslySetInnerHTML={{ __html: blog.content }}
                 />
             </div>

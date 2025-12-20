@@ -26,7 +26,7 @@ function BlogCard({ blog }: { blog: BlogPost }) {
                         </span>
                     ))}
                 </div>
-                <h3 className='text-[18px] font-bold leading-tight group-hover:text-primary duration-300'>
+                <h3 className='text-[16px] font-normal leading-tight group-hover:text-primary duration-300'>
                     {blog.title}
                 </h3>
                 <p className='text-secondary text-[14px] line-clamp-2'>
